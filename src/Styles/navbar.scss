@@ -1,0 +1,40 @@
+@import './globals.scss';
+
+.header{
+    width: 100%;
+    background-color: $main-color;
+    position: fixed;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    color: $light-bg-color;
+    align-items: center;
+    height: 70px;
+    button{
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-size: 1.25em;
+        padding: 0 20px;
+        cursor: pointer;
+    }
+    img{
+        width: 150px;
+        padding-left: 20px;
+    }
+}
+
+#user-btn{
+    background-color: $secondary-color;
+    color: $main-color;
+    border-radius: 15px;
+    font-size: 1em;
+    text-transform: uppercase;
+    padding: 5px 25px;
+    &:hover{
+        color: $light-bg-color;
+    }
+}
+

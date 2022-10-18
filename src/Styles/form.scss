@@ -1,0 +1,34 @@
+@import './globals.scss';
+
+.container-form{
+    margin: 50px auto;
+    padding: 40px 60px;
+    background-color: $light-bg-color;
+    border: 1px solid $light-bg-color;
+    box-shadow: 1px 4px 14px #888888;
+    border-radius: 20px;
+    width: 50%;
+    h2{
+        font-size: 2em;
+        margin-bottom: 35px;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        input{
+            width: 94%;
+            margin: 15px 0;
+        }
+        button{
+            background-color: $secondary-color;
+            border: none;
+            border-radius: 25px;
+            color: $light-bg-color;
+            padding: 16px 32px;
+            text-decoration: none;
+            margin: 20px 0;
+            cursor: pointer;
+            font-size: 1.10em;
+        }
+    }
+}

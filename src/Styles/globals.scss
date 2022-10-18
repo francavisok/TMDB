@@ -1,0 +1,40 @@
+$main-color: #01172F;
+$secondary-color: #12b7dd;
+$bg-color: #92AD94;
+$light-bg-color: #ede7f6;
+$grey-bg: lightgrey;
+
+
+@mixin button($bg) {
+    background: $bg;
+    color:white;
+    text-decoration:none;
+    padding:5px 10px;
+    border-radius:3px;
+    &:hover {
+      background:darken($bg,8%);
+      transition: all 0.3s ease;
+    }
+    &:active {
+      background:darken($bg,25%);
+    } 
+}
+
+@mixin input{
+    border-radius: 20px;
+    border-color: $light-bg-color;
+    border-style: none;
+    padding: 10px 20px;
+}
+
+@mixin card {
+  border: 1px solid $light-bg-color;
+  box-shadow: 1px 4px 14px #888888;
+  border-radius: 20px;
+  background-color: $light-bg-color;
+  color: $main-color;
+}
+
+.partitioned-container{
+    display: flex;
+  }

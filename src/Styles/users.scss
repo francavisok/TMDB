@@ -1,0 +1,34 @@
+@import './globals.scss';
+
+.sidebar-users{
+    background-color: $bg-color;
+    padding: 40px 20px;
+}
+
+.container-users-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+    align-items: stretch;
+    padding: 40px 70px;
+    width: 100%;
+
+    .anchor-item{
+        .user-card{
+            @include card;
+            padding: 40px 20px;
+            &:hover{
+                background-color: white;
+            }
+        }
+        h2{
+            font-size: 1.5em;
+            text-transform: capitalize;
+            text-align: center;
+            margin: 0;
+            padding: 40px, 20px;
+
+        }
+    }
+
+}

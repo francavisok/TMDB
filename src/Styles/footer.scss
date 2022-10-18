@@ -1,0 +1,27 @@
+@import './globals.scss';
+
+footer{
+    background-color: $main-color;
+    padding: 20px 20px;
+}
+
+.container-footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    img{
+        max-width: 100px;
+    }
+}
+
+.container-icons{
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    .icon{
+        color: $light-bg-color;
+        font-size: 1.25em;
+    }
+}
+

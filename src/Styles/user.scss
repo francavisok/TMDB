@@ -1,0 +1,47 @@
+@import './globals.scss';
+
+.container-user{
+    display: flex;
+}
+
+.sidebar-user{
+    background-color: $bg-color;
+    color: $main-color;
+    padding: 40px 40px;
+    width: 15%;
+    a{
+        color: $main-color;
+        &:hover{
+            font-weight: 800;
+        }
+    }
+    h1{
+        text-transform: capitalize;
+    }
+    h4{
+        font-weight: 200;
+        margin-bottom: 40px;
+
+    }
+}
+
+.grid-user{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 30px;
+    align-items: stretch;
+    padding-bottom: 40px;
+}
+
+.container-grids{
+    padding: 0 40px;
+
+    h2{
+        padding-left: 40px;
+        text-transform: uppercase;
+    }
+}
+
+.anchor-user{
+    padding-bottom: 32px;
+}

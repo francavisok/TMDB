@@ -1,0 +1,10 @@
+@import './globals.scss';
+
+.container-home{
+    background: linear-gradient(to bottom, $secondary-color, $light-bg-color);
+    color: $main-color;
+    padding: 80px 60px;
+    h1{
+        font-size: 4em;
+    }
+}

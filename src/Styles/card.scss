@@ -1,0 +1,48 @@
+@import './globals.scss';
+
+.container-card{
+    @include card;
+    height: 100%;
+    display: flex;
+    padding: 15px 30px;
+    img{
+        max-width: 100px;
+        height: auto;
+        align-self: center;
+        margin-right: 20px;
+    }
+    &:hover{
+        background-color: white;
+    }
+}
+
+.container-card-flex{
+    display: flex;
+    flex-direction: column;
+    h3{
+        text-transform: uppercase;
+    }
+    p{
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+        margin: 0;
+        margin-top: 19px;
+    }
+}
+
+.anchor{
+    padding-bottom: 32px;
+}
+
+.trashcan{
+    cursor: pointer;
+    outline: none;
+    &:hover{
+        color: red;
+    }
+    &:active{
+        font-size: 2em;
+    }
+}

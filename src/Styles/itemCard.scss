@@ -1,0 +1,36 @@
+@import './globals.scss';
+
+.container-item-card{
+    @include card;
+    margin: 70px 50px;
+    padding: 50px 80px;
+    display: flex;
+    img{
+        max-width: 300px;
+        height: auto;
+        align-self: center;
+        margin-right: 40px;
+    }
+    li{
+        list-style: none;
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+    }
+    h1{
+        font-size: 3em;
+        color: $secondary-color;
+    }
+}
+
+.icon-heart{
+    cursor: pointer;
+    outline: none;
+    &:hover{
+        color: red;
+    }
+    &:active{
+        font-size: 2em;
+    }
+}
